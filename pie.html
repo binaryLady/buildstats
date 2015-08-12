@@ -1,0 +1,19 @@
+
+<script src="libs/plugins.js"></script>
+<script src="d3/d3.v3.min.js"></script>
+<script src="libs/d3.geom.min.js"></script>
+<script src="libs/d3.layout.min.js"></script>
+<script src="scripts/pie.js"></script>
+<script src="scripts/moment.js"></script>
+
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        d3.json("server/config.php", function(data){
+            custom_bubble_chart.init(data);
+
+        });
+    });
+</script>
+

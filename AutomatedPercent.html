@@ -1,0 +1,41 @@
+
+
+
+<script src="scripts/underscore.js"></script>
+<script src="scripts/underscore.deepextend.js"></script>
+<script src="scripts/underscore.nest.min.js"></script>
+<script src="libs/plugins.js"></script>
+<script src="d3/d3.v3.min.js"></script>
+<script src="libs/CustomTooltip.js"></script>
+<script src="libs/d3.geom.min.js"></script>
+<script src="libs/d3.layout.min.js"></script>
+<script src="scripts/bars3.js"></script>
+<script src="scripts/d3.legend.js"></script>
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+<script src="scripts/moment.js"></script>
+<style type="text/css">
+
+    .grid .tick {
+        stroke: lightgrey;
+        opacity: 0.7;
+        z-index: 1;
+    }
+    .grid path {
+        z-index: 1;
+    }
+    rect{
+        z-index:1000;
+    }
+</style>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        d3.json("server/config.php", function(data){
+            custom_bubble_chart.init(data);
+
+        });
+    });
+</script>
+
+
+<div class="tooltip" id="custom_tooltip" style="width: 240px; display: none;"></div>'

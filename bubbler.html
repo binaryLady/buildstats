@@ -1,0 +1,36 @@
+
+
+
+<script src="scripts/underscore.js"></script>
+<script src="scripts/underscore.deepextend.js"></script>
+<script src="scripts/underscore.nest.min.js"></script>
+<script src="libs/plugins.js"></script>
+<script src="d3/d3.v3.min.js"></script>
+<script src="libs/CustomTooltip.js"></script>
+<script src="libs/d3.geom.min.js"></script>
+<script src="libs/d3.layout.min.js"></script>
+<script src="scripts/bubbler.js" ></script>
+
+<script type="text/javascript">
+    d3.json("server/bubbler.php", function(data){
+
+        custom_bubble_chart.init(data);
+        //custom_bubble_chart.setView("line");
+        console.log("hi");
+
+    });
+
+    $(document).ready(function(){
+        $(document).ready(function(){
+            $("nav a").click(function(){
+                var view_type = $(this).attr("id");
+                $("nav a").removeClass("active");
+                $(this).toggleClass("active");
+                custom_bubble_chart.setView(view_type);
+                custom_bubble_chart.nodeSwitcher();
+
+                return false;
+            });
+        });
+    });
+</script>

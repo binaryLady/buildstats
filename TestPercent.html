@@ -1,0 +1,23 @@
+
+<script src="scripts/jquery.dropdown.js"></script>
+<script src="libs/plugins.js"></script>
+<script src="d3/d3.v3.min.js"></script>
+<script src="libs/CustomTooltip.js"></script>
+<script src="libs/d3.geom.min.js"></script>
+<script src="libs/d3.layout.min.js"></script>
+<script src="scripts/bars5.js"></script>
+<script src="scripts/d3.legend.js"></script>
+<script src="scripts/moment.js"></script>
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        d3.json("server/configCopy.php", function(data){
+            custom_bubble_chart.init(data);
+
+        });
+    });
+</script>
+
+
+<div class="tooltip" id="custom_tooltip" style="width: 240px; display: none;"></div>'
