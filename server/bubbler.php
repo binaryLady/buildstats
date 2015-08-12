@@ -1,6 +1,6 @@
 <?php
 $DBlink = mysqli_connect();
-//$DBlink = new mysqli("127.0.0.1", "dataConnect", "edocLover2014", "csv_db");
+
 
 $sql= "
 SELECT groups.colors, groups.Application, groups.app_group, test_data.class_percent, test_data.class_total,
