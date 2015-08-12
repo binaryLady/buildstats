@@ -191,11 +191,8 @@
 
 
 <header>
-    <div id="top-bar"><h2> Wex IT Data Visualization Tools</h2>
+    <div id="top-bar"><h2>Data Visualization Tools</h2>
     </div>
-
-    <img src="images/wex.gif" alt="wex logo" class="logo"/>
-    <!---<h1>ONLINE</h1>---!>
 
 
     <?php
